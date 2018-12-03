@@ -8,11 +8,11 @@ $CONFIG = '{"lang":"en","error_reporting":true,"show_hidden":true}';
  * https://tinyfilemanager.github.io
  */
 
-// Auth with login/password (set true/false to enable/disable it)
+// 是否开启用户密码登录 (set true/false to enable/disable it)
 $use_auth = true;
 
 // Users: array('Username' => 'Password', 'Username2' => 'Password2', ...)
-// Generate secure password hash - https://tinyfilemanager.github.io/docs/pwd.html
+// Generate secure password hash - http://www.passwordtool.hu/php5-password-hash-generator
 $auth_users = array(
     'admin' => '$2y$10$/K.hjNr84lLNDt8fTXjoI.DBp6PpeyoJ.mGwrrLuCZfAwfSAGqhOW', //admin@123
     'user' => '$2y$10$Fg6Dz8oH9fPoZ2jJan5tZuv6Z4Kp7avtQ9bDfrdRntXtPeiMAZyGO' //12345
@@ -30,14 +30,14 @@ $directories_users = array();
 // Enable highlight.js (https://highlightjs.org/) on view's page
 $use_highlightjs = true;
 
-// highlight.js style
-$highlightjs_style = 'vs';
+// highlight.js style 查看全部 ：https://highlightjs.org/static/demo/
+$highlightjs_style = 'Monokai';//
 
 // Enable ace.js (https://ace.c9.io/) on view's page
 $edit_files = true;
 
 // Default timezone for date() and time() - http://php.net/manual/en/timezones.php
-$default_timezone = 'Etc/UTC'; // UTC
+$default_timezone = 'Asia/Shanghai'; // UTC  //Asia/Shanghai
 
 // Root path for file manager
 $root_path = $_SERVER['DOCUMENT_ROOT'];
@@ -55,7 +55,7 @@ $iconv_input_encoding = 'UTF-8';
 // date() format for file modification date
 $datetime_format = 'd.m.y H:i';
 
-// allowed file extensions for upload and rename
+// 允许上传和重命名的文件的格式
 $allowed_extensions = ''; // 'gif,png,jpg'
 
 // Array of files and folders excluded from listing
@@ -82,7 +82,7 @@ $lang_list = array(
     'en' => 'English',
     'fr' => 'Français',
     'it' => 'Italiano',
-    'ru' => 'Russian'
+    'zn' => 'Chinese'
 );
 
 //--- EDIT BELOW CAREFULLY OR DO NOT EDIT AT ALL
